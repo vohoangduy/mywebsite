@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>cờ caro </title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/playing.css">
+    <link rel="stylesheet" href="css/CssFile.css">
+    <meta name="viewport" content="width= device-width,initial-scale=1" />
+    <script type="text/javascript" src="EventFile.js"></script>
+    <script type="text/javascript" src="AIFile.js"></script>
+</head>
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="board-area" class="content-area">
+            <div id="info-board">
+                <img id="oppo1-avartar" class="oppo-avt" src="img/hotgirl.jpg">
+                <img id="vs" src="img/vs.png">
+                <img id="oppo2-avartar" class="oppo-avt" src="img/hoangduy.jpg">
+                <br/>
+                <a href="#" style="font-weight:bold;">Hot Girl</a><img style="width:16px;" src="img/hotgirl.jpg"> đấu với <a href="#" style="font-weight:bold;">Hoàng Duy</a><img style="width:16px;" src="img/hoangduy.jpg">
+            </div>
+            <div id="board">
+                <div id="divmain">
+                    <table id="table">
+                    </table>
+                </div>
+            </div>
+        </div>
+        <h1 id="logo">CARO ONLINE</h1>
+        <center><span style="font-size: 12px; font-weight:bold;">Chơi cờ Caro trực tuyến cùng bạn bè!</span> </center>
+        <div id="divcontrol">
+            <div id="label1"><b>QUÂN:</b></div>
+            <div id="imgPlayer"></div>
+            <br/>
+            <div id="label2"><input type="checkbox" id="chbtime" onClick="TimeReturn()" /><b>ĐIẾM NGƯỢC</b></div>
+            <progress id="pgrTime" max="100" value="100"></progress>
+            <time></time>
+            <br/>
+            <input type="button" class="button" value=" tui với bà " onClick="PvsP()" />
+            <input type="button" class="button" value="chơi với AI" onClick="PvsM()" />
+            <input type="button" class="button" value="xin đi lại" onClick="Undo(2)" /><br/>
+            <div id="divcheckbox">
+            </div>
+        </div>
+    </div>
+    <footer class="content-area ">
+        <p class="text-right">Online Caro by <a href="https://www.facebook.com/hoangduy.vo.9022">hoangDuy</a></p>
+    </footer>
+
+
+</body>
+
+</html>
